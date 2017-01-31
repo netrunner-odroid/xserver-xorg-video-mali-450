@@ -1,0 +1,7 @@
+KERNEL=="amstream*",SUBSYSTEM=="amstream-dev",MODE="0666",GROUP="video"
+KERNEL=="amvideo*",SUBSYSTEM=="video",MODE="0666",GROUP="video"
+KERNEL=="mali",SUBSYSTEM=="misc",MODE="0777",GROUP="video"
+KERNEL=="ump",SUBSYSTEM=="ump",MODE="0777",GROUP="video"
+KERNEL=="ttySAC0", SYMLINK+="ttyACM99"
+KERNEL=="fb1", SYMLINK+="fb6"
+KERNEL=="CEC", MODE="0777"

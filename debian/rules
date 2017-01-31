@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+LDFLAGS=$(shell dpkg-buildflags --get LDFLAGS)
+LDFLAGS+="-L/usr/lib/$(DEB_HOST_MULTIARCH)/mali-egl"
+
+%:
+	dh $@  --with autotools-dev
+
+override_dh_auto_configure:
+	dh_auto_configure -- LDFLAGS="$(LDFLAGS)"

@@ -1,0 +1,16 @@
+Source: xserver-xorg-video-mali-450
+Section: x11
+Priority: optional
+Maintainer: Rohan Garg <rohangarg@kubuntu.org>
+Build-Depends: debhelper (>= 9), autotools-dev,
+ xorg-dev,
+ c2-mali-x11 [arm64],
+ c2-mali-x11-dev [arm64]
+Standards-Version: 3.9.5
+Homepage: https://github.com/mdrjr/c2_mali_ddx
+
+Package: xserver-xorg-video-mali-450
+Architecture: arm64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: X11 driver for MALI
+ X11 driver for getting OpenGLES on MALI

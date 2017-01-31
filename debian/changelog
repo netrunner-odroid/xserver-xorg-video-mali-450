@@ -1,0 +1,5 @@
+xserver-xorg-video-mali-450 (20150118-fa6394b-3) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Thu, 09 Jul 2015 18:11:14 +0200
